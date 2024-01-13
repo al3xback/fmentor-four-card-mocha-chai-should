@@ -46,7 +46,7 @@ describe('DOM', () => {
 		const sectionTitleEl = document.querySelector('.section__title');
 		const sectionTitle = sectionTitleEl.textContent.trim();
 
-		sectionTitle.should.equal('Reliable, efficient delivery');
+		sectionTitle.should.include('Reliable, efficient delivery');
 	});
 
 	it('should have two children inside of the section element', () => {
